@@ -1,7 +1,13 @@
 #include <stdio.h>
-int main ()
-{
- printf("333\n");
- printf("這裡有字,有插入值\n");
- printf("這裡有字%d有插入值\n",333);
+int main(){
+    long long int a,b;
+    while (scanf("%lld%lld",&a,&b)==2){
+        long long int ans = a-b;
+        if(ans<0) ans = b-a;
+        printf("%lld\n", ans);
+    }
+
+
+
+
 }
